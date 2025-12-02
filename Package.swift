@@ -33,54 +33,30 @@ let package = Package(
         .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.4.3")
     ],
     targets: [
-        .target(
-            name: "Art",
-            dependencies: [],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
-        ),
+        .target(name: "Art"),
         .target(
             name: "ArtUI",
-            dependencies: ["Art"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["Art"]
         ),
         .target(
             name: "ArtTerminal",
-            dependencies: ["Art"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["Art"]
         ),
         .executableTarget(
             name: "ArtDemo",
-            dependencies: ["Art", "ArtUI", "ArtTerminal"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["Art", "ArtUI", "ArtTerminal"]
         ),
         .testTarget(
             name: "ArtTests",
-            dependencies: ["Art"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["Art"]
         ),
         .testTarget(
             name: "ArtUITests",
-            dependencies: ["ArtUI"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["ArtUI"]
         ),
         .testTarget(
             name: "ArtTerminalTests",
-            dependencies: ["ArtTerminal"],
-            swiftSettings: [
-                .enableUpcomingFeature("StrictConcurrency")
-            ]
+            dependencies: ["ArtTerminal"]
         )
     ]
 )
