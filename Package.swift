@@ -30,10 +30,16 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(url: "https://github.com/CorvidLabs/swift-color.git", from: "0.1.0"),
         .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.4.3")
     ],
     targets: [
-        .target(name: "Art"),
+        .target(
+            name: "Art",
+            dependencies: [
+                .product(name: "Color", package: "swift-color"),
+            ]
+        ),
         .target(
             name: "ArtUI",
             dependencies: ["Art"]
