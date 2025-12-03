@@ -2,6 +2,44 @@
 
 import PackageDescription
 
+var products: [Product] = [
+    .library(
+        name: "Art",
+        targets: ["Art"]
+    ),
+    .library(
+        name: "ArtTerminal",
+        targets: ["ArtTerminal"]
+    )
+]
+
+var targets: [Target] = [
+    .target(
+        name: "Art",
+        dependencies: [
+            .product(name: "Color", package: "swift-color"),
+        ]
+    ),
+    .target(
+        name: "ArtTerminal",
+        dependencies: ["Art"]
+    ),
+    .testTarget(
+        name: "ArtTests",
+        dependencies: ["Art"]
+    ),
+    .testTarget(
+        name: "ArtTerminalTests",
+        dependencies: ["ArtTerminal"]
+    )
+]
+
+#if canImport(SwiftUI)
+products.append(.library(name: "ArtUI", targets: ["ArtUI"]))
+targets.append(.target(name: "ArtUI", dependencies: ["Art"]))
+targets.append(.testTarget(name: "ArtUITests", dependencies: ["ArtUI"]))
+#endif
+
 let package = Package(
     name: "swift-art",
     platforms: [
@@ -11,50 +49,10 @@ let package = Package(
         .watchOS(.v9),
         .visionOS(.v1)
     ],
-    products: [
-        .library(
-            name: "Art",
-            targets: ["Art"]
-        ),
-        .library(
-            name: "ArtUI",
-            targets: ["ArtUI"]
-        ),
-        .library(
-            name: "ArtTerminal",
-            targets: ["ArtTerminal"]
-        )
-    ],
+    products: products,
     dependencies: [
         .package(url: "https://github.com/CorvidLabs/swift-color.git", from: "0.1.0"),
         .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.4.3")
     ],
-    targets: [
-        .target(
-            name: "Art",
-            dependencies: [
-                .product(name: "Color", package: "swift-color"),
-            ]
-        ),
-        .target(
-            name: "ArtUI",
-            dependencies: ["Art"]
-        ),
-        .target(
-            name: "ArtTerminal",
-            dependencies: ["Art"]
-        ),
-        .testTarget(
-            name: "ArtTests",
-            dependencies: ["Art"]
-        ),
-        .testTarget(
-            name: "ArtUITests",
-            dependencies: ["ArtUI"]
-        ),
-        .testTarget(
-            name: "ArtTerminalTests",
-            dependencies: ["ArtTerminal"]
-        )
-    ]
+    targets: targets
 )
