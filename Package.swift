@@ -23,10 +23,6 @@ let package = Package(
         .library(
             name: "ArtTerminal",
             targets: ["ArtTerminal"]
-        ),
-        .executable(
-            name: "ArtDemo",
-            targets: ["ArtDemo"]
         )
     ],
     dependencies: [
@@ -47,10 +43,6 @@ let package = Package(
         .target(
             name: "ArtTerminal",
             dependencies: ["Art"]
-        ),
-        .executableTarget(
-            name: "ArtDemo",
-            dependencies: ["Art", "ArtUI", "ArtTerminal"]
         ),
         .testTarget(
             name: "ArtTests",
