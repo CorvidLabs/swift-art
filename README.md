@@ -1,9 +1,9 @@
 # swift-art
 
-[![CI](https://github.com/0xLeif/swift-art/actions/workflows/ci.yml/badge.svg)](https://github.com/0xLeif/swift-art/actions/workflows/ci.yml)
-[![Documentation](https://github.com/0xLeif/swift-art/actions/workflows/docs.yml/badge.svg)](https://github.com/0xLeif/swift-art/actions/workflows/docs.yml)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2F0xLeif%2Fswift-art%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/0xLeif/swift-art)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2F0xLeif%2Fswift-art%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/0xLeif/swift-art)
+[![CI](https://github.com/CorvidLabs/swift-art/actions/workflows/ci.yml/badge.svg)](https://github.com/CorvidLabs/swift-art/actions/workflows/ci.yml)
+[![Documentation](https://github.com/CorvidLabs/swift-art/actions/workflows/docs.yml/badge.svg)](https://github.com/CorvidLabs/swift-art/actions/workflows/docs.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCorvidLabs%2Fswift-art%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/CorvidLabs/swift-art)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCorvidLabs%2Fswift-art%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/CorvidLabs/swift-art)
 
 A comprehensive Swift package for generative art and computational creativity, providing elegant, protocol-oriented abstractions for creating beautiful algorithmic art.
 
@@ -32,13 +32,13 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/0xLeif/swift-art.git", from: "0.1.0")
+    .package(url: "https://github.com/CorvidLabs/swift-art.git", from: "0.1.0")
 ]
 ```
 
 Or in Xcode:
 1. File → Add Package Dependencies...
-2. Enter package URL: `https://github.com/0xLeif/swift-art.git`
+2. Enter package URL: `https://github.com/CorvidLabs/swift-art.git`
 3. Select version and add to your target
 
 ## Module Organization
@@ -254,7 +254,7 @@ This package follows modern Swift best practices in the style of 0xLeif:
 
 ## Documentation
 
-Full API documentation is available at [https://0xleif.github.io/swift-art/documentation/art/](https://0xleif.github.io/swift-art/documentation/art/)
+Full API documentation is available at [https://corvidlabs.github.io/swift-art/documentation/art/](https://corvidlabs.github.io/swift-art/documentation/art/)
 
 ## Advanced Usage
 
@@ -330,4 +330,4 @@ MIT License - See LICENSE file for details
 
 ## Credits
 
-Created by [Leif](https://github.com/0xLeif) with inspiration from Processing, p5.js, and the computational art community.
+Created by [Leif](https://github.com/CorvidLabs) with inspiration from Processing, p5.js, and the computational art community.
