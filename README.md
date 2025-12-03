@@ -1,9 +1,8 @@
 # swift-art
 
-[![CI](https://github.com/CorvidLabs/swift-art/actions/workflows/ci.yml/badge.svg)](https://github.com/CorvidLabs/swift-art/actions/workflows/ci.yml)
-[![Documentation](https://github.com/CorvidLabs/swift-art/actions/workflows/docs.yml/badge.svg)](https://github.com/CorvidLabs/swift-art/actions/workflows/docs.yml)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCorvidLabs%2Fswift-art%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/CorvidLabs/swift-art)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCorvidLabs%2Fswift-art%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/CorvidLabs/swift-art)
+[![CI](https://img.shields.io/github/actions/workflow/status/CorvidLabs/swift-art/ci.yml?label=CI&branch=main)](https://github.com/CorvidLabs/swift-art/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/CorvidLabs/swift-art)](https://github.com/CorvidLabs/swift-art/blob/main/LICENSE)
+[![Version](https://img.shields.io/github/v/release/CorvidLabs/swift-art)](https://github.com/CorvidLabs/swift-art/releases)
 
 A comprehensive Swift package for generative art and computational creativity, providing elegant, protocol-oriented abstractions for creating beautiful algorithmic art.
 
