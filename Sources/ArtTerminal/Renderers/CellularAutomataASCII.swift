@@ -1,11 +1,13 @@
 import Art
 
 extension GameOfLife {
-    /// Renders the Game of Life grid to an ASCII string.
-    /// - Parameters:
-    ///   - aliveChar: Character for living cells.
-    ///   - deadChar: Character for dead cells.
-    /// - Returns: A multi-line string representation.
+    /**
+     Renders the Game of Life grid to an ASCII string.
+     - Parameters:
+       - aliveChar: Character for living cells.
+       - deadChar: Character for dead cells.
+     - Returns: A multi-line string representation.
+     */
     public func renderASCII(
         aliveChar: Character = "█",
         deadChar: Character = " "
@@ -43,11 +45,13 @@ extension GameOfLife {
 }
 
 extension ElementaryCA {
-    /// Renders the current state to an ASCII string.
-    /// - Parameters:
-    ///   - aliveChar: Character for alive cells.
-    ///   - deadChar: Character for dead cells.
-    /// - Returns: A single-line string representation.
+    /**
+     Renders the current state to an ASCII string.
+     - Parameters:
+       - aliveChar: Character for alive cells.
+       - deadChar: Character for dead cells.
+     - Returns: A single-line string representation.
+     */
     public func renderASCII(
         aliveChar: Character = "█",
         deadChar: Character = " "
@@ -61,12 +65,14 @@ extension ElementaryCA {
         return result
     }
 
-    /// Renders the history to an ASCII string.
-    /// - Parameters:
-    ///   - generations: Number of generations to generate.
-    ///   - aliveChar: Character for alive cells.
-    ///   - deadChar: Character for dead cells.
-    /// - Returns: A multi-line string representation.
+    /**
+     Renders the history to an ASCII string.
+     - Parameters:
+       - generations: Number of generations to generate.
+       - aliveChar: Character for alive cells.
+       - deadChar: Character for dead cells.
+     - Returns: A multi-line string representation.
+     */
     public func renderHistoryASCII(
         generations: Int,
         aliveChar: Character = "█",

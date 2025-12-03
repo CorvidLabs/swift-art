@@ -38,11 +38,13 @@ public struct MandelbrotView: View {
         )
     }
 
-    /// Creates a Mandelbrot view.
-    /// - Parameters:
-    ///   - mandelbrot: The Mandelbrot generator to use.
-    ///   - bounds: The complex plane bounds to render.
-    ///   - gradient: The color gradient for coloring escape times.
+    /**
+     Creates a Mandelbrot view.
+     - Parameters:
+       - mandelbrot: The Mandelbrot generator to use.
+       - bounds: The complex plane bounds to render.
+       - gradient: The color gradient for coloring escape times.
+     */
     public init(
         mandelbrot: Mandelbrot = Mandelbrot(),
         bounds: MandelbrotBounds = .default,

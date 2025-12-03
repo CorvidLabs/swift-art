@@ -36,21 +36,25 @@ public struct Turtle: Sendable {
     private let stepLength: Double
     private let angleIncrement: Double
 
-    /// Creates a turtle graphics interpreter.
-    /// - Parameters:
-    ///   - stepLength: Length of each forward step.
-    ///   - angleIncrement: Angle to turn for + and - commands (in radians).
+    /**
+     Creates a turtle graphics interpreter.
+     - Parameters:
+       - stepLength: Length of each forward step.
+       - angleIncrement: Angle to turn for + and - commands (in radians).
+     */
     public init(stepLength: Double = 1.0, angleIncrement: Double = .pi / 2.0) {
         self.stepLength = stepLength
         self.angleIncrement = angleIncrement
     }
 
-    /// Interprets an L-system string and generates lines.
-    /// - Parameters:
-    ///   - instructions: The L-system string to interpret.
-    ///   - startPosition: Starting position of the turtle.
-    ///   - startAngle: Starting angle of the turtle (in radians).
-    /// - Returns: Array of lines representing the turtle's path.
+    /**
+     Interprets an L-system string and generates lines.
+     - Parameters:
+       - instructions: The L-system string to interpret.
+       - startPosition: Starting position of the turtle.
+       - startAngle: Starting angle of the turtle (in radians).
+     - Returns: Array of lines representing the turtle's path.
+     */
     public func interpret(
         _ instructions: String,
         startPosition: Point2D = .zero,

@@ -2,12 +2,16 @@ import Foundation
 
 /// A protocol for generating noise values at specific coordinates.
 public protocol NoiseGenerator: Sendable {
-    /// Samples the noise function at the given 2D coordinates.
-    /// - Returns: A noise value, typically in the range [-1, 1] or [0, 1] depending on implementation.
+    /**
+     Samples the noise function at the given 2D coordinates.
+     - Returns: A noise value, typically in the range [-1, 1] or [0, 1] depending on implementation.
+     */
     func sample(x: Double, y: Double) -> Double
 
-    /// Samples the noise function at the given 3D coordinates.
-    /// - Returns: A noise value, typically in the range [-1, 1] or [0, 1] depending on implementation.
+    /**
+     Samples the noise function at the given 3D coordinates.
+     - Returns: A noise value, typically in the range [-1, 1] or [0, 1] depending on implementation.
+     */
     func sample(x: Double, y: Double, z: Double) -> Double
 }
 

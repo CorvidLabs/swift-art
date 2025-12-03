@@ -9,13 +9,15 @@ public struct ParticleSystemView: View {
     private let backgroundColor: Color
     private let showTrails: Bool
 
-    /// Creates a particle system view.
-    /// - Parameters:
-    ///   - system: The particle system to animate.
-    ///   - particleColor: The color for particles.
-    ///   - particleSize: The size of each particle.
-    ///   - backgroundColor: The background color.
-    ///   - showTrails: Whether to show particle trails.
+    /**
+     Creates a particle system view.
+     - Parameters:
+       - system: The particle system to animate.
+       - particleColor: The color for particles.
+       - particleSize: The size of each particle.
+       - backgroundColor: The background color.
+       - showTrails: Whether to show particle trails.
+     */
     public init(
         system: ParticleSystem,
         particleColor: Color = .white,

@@ -2,10 +2,12 @@ import Art
 
 /// A protocol for types that can render themselves to an ASCII canvas.
 public protocol ASCIIRenderable {
-    /// Renders this type to an ASCII canvas.
-    /// - Parameters:
-    ///   - canvas: The canvas to render to.
-    ///   - config: The render configuration.
+    /**
+     Renders this type to an ASCII canvas.
+     - Parameters:
+       - canvas: The canvas to render to.
+       - config: The render configuration.
+     */
     func render(to canvas: inout ASCIICanvas, config: ASCIIRenderConfig)
 }
 

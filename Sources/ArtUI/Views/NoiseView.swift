@@ -7,11 +7,13 @@ public struct NoiseView<Generator: NoiseGenerator>: View {
     private let scale: Double
     private let gradient: Art.Gradient
 
-    /// Creates a noise view.
-    /// - Parameters:
-    ///   - generator: The noise generator to use.
-    ///   - scale: The scale factor for sampling (smaller = more zoomed in).
-    ///   - gradient: The color gradient to map noise values to.
+    /**
+     Creates a noise view.
+     - Parameters:
+       - generator: The noise generator to use.
+       - scale: The scale factor for sampling (smaller = more zoomed in).
+       - gradient: The color gradient to map noise values to.
+     */
     public init(
         generator: Generator,
         scale: Double = 0.02,
@@ -50,12 +52,14 @@ public struct AnimatedNoiseView<Generator: NoiseGenerator>: View {
     private let timeScale: Double
     private let gradient: Art.Gradient
 
-    /// Creates an animated noise view.
-    /// - Parameters:
-    ///   - generator: The noise generator to use.
-    ///   - scale: The spatial scale factor.
-    ///   - timeScale: The temporal scale factor (speed of animation).
-    ///   - gradient: The color gradient to map noise values to.
+    /**
+     Creates an animated noise view.
+     - Parameters:
+       - generator: The noise generator to use.
+       - scale: The spatial scale factor.
+       - timeScale: The temporal scale factor (speed of animation).
+       - gradient: The color gradient to map noise values to.
+     */
     public init(
         generator: Generator,
         scale: Double = 0.02,

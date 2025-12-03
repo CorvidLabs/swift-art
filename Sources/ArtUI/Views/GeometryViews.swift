@@ -11,15 +11,17 @@ public struct VoronoiView: View {
     private let siteColor: Color
     private let edgeColor: Color
 
-    /// Creates a Voronoi view.
-    /// - Parameters:
-    ///   - voronoi: The Voronoi diagram to render.
-    ///   - bounds: The bounds for rendering.
-    ///   - colors: Colors for the cells (cycled through).
-    ///   - showSites: Whether to show the site points.
-    ///   - showEdges: Whether to show cell edges.
-    ///   - siteColor: Color for site points.
-    ///   - edgeColor: Color for edges.
+    /**
+     Creates a Voronoi view.
+     - Parameters:
+       - voronoi: The Voronoi diagram to render.
+       - bounds: The bounds for rendering.
+       - colors: Colors for the cells (cycled through).
+       - showSites: Whether to show the site points.
+       - showEdges: Whether to show cell edges.
+       - siteColor: Color for site points.
+       - edgeColor: Color for edges.
+     */
     public init(
         voronoi: Voronoi,
         bounds: CGRect,

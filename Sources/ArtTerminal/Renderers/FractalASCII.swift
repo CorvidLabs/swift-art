@@ -1,13 +1,15 @@
 import Art
 
 extension Mandelbrot {
-    /// Renders the Mandelbrot set to an ASCII string.
-    /// - Parameters:
-    ///   - width: The width in characters.
-    ///   - height: The height in characters.
-    ///   - bounds: The complex plane bounds.
-    ///   - palette: The character palette to use.
-    /// - Returns: A multi-line string of ASCII art.
+    /**
+     Renders the Mandelbrot set to an ASCII string.
+     - Parameters:
+       - width: The width in characters.
+       - height: The height in characters.
+       - bounds: The complex plane bounds.
+       - palette: The character palette to use.
+     - Returns: A multi-line string of ASCII art.
+     */
     public func renderASCII(
         width: Int,
         height: Int,

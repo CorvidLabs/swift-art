@@ -1,14 +1,16 @@
 import Art
 
 extension Turtle {
-    /// Renders lines to an ASCII canvas using Bresenham's line algorithm.
-    /// - Parameters:
-    ///   - lines: The lines to render.
-    ///   - width: The canvas width.
-    ///   - height: The canvas height.
-    ///   - lineChar: The character for lines.
-    ///   - backgroundChar: The background character.
-    /// - Returns: An ASCII canvas with the lines rendered.
+    /**
+     Renders lines to an ASCII canvas using Bresenham's line algorithm.
+     - Parameters:
+       - lines: The lines to render.
+       - width: The canvas width.
+       - height: The canvas height.
+       - lineChar: The character for lines.
+       - backgroundChar: The background character.
+     - Returns: An ASCII canvas with the lines rendered.
+     */
     public func toASCIICanvas(
         lines: [Line],
         width: Int,
@@ -87,15 +89,17 @@ extension Turtle {
 }
 
 extension LSystem {
-    /// Renders the L-system to an ASCII string.
-    /// - Parameters:
-    ///   - generations: Number of generations to iterate.
-    ///   - width: The canvas width.
-    ///   - height: The canvas height.
-    ///   - turtle: The turtle interpreter.
-    ///   - lineChar: The character for lines.
-    ///   - backgroundChar: The background character.
-    /// - Returns: A multi-line ASCII string.
+    /**
+     Renders the L-system to an ASCII string.
+     - Parameters:
+       - generations: Number of generations to iterate.
+       - width: The canvas width.
+       - height: The canvas height.
+       - turtle: The turtle interpreter.
+       - lineChar: The character for lines.
+       - backgroundChar: The background character.
+     - Returns: A multi-line ASCII string.
+     */
     public func renderASCII(
         generations: Int,
         width: Int = 80,

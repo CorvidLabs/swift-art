@@ -24,13 +24,15 @@ public struct ImageExporter {
         case writeFailed
     }
 
-    /// Exports a SwiftUI view to image data.
-    /// - Parameters:
-    ///   - view: The view to export.
-    ///   - size: The size of the output image.
-    ///   - scale: The scale factor (default 2.0 for retina).
-    ///   - format: The image format.
-    /// - Returns: The encoded image data.
+    /**
+     Exports a SwiftUI view to image data.
+     - Parameters:
+       - view: The view to export.
+       - size: The size of the output image.
+       - scale: The scale factor (default 2.0 for retina).
+       - format: The image format.
+     - Returns: The encoded image data.
+     */
     @MainActor
     public static func export<V: View>(
         _ view: V,
@@ -95,13 +97,15 @@ public struct ImageExporter {
         #endif
     }
 
-    /// Exports a SwiftUI view to a file.
-    /// - Parameters:
-    ///   - view: The view to export.
-    ///   - url: The destination URL.
-    ///   - size: The size of the output image.
-    ///   - scale: The scale factor.
-    ///   - format: The image format.
+    /**
+     Exports a SwiftUI view to a file.
+     - Parameters:
+       - view: The view to export.
+       - url: The destination URL.
+       - size: The size of the output image.
+       - scale: The scale factor.
+       - format: The image format.
+     */
     @MainActor
     public static func export<V: View>(
         _ view: V,

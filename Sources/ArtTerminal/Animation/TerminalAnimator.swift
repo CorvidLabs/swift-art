@@ -9,19 +9,23 @@ public struct TerminalAnimator: Sendable {
     /// Whether to clear the screen between frames.
     public let clearScreen: Bool
 
-    /// Creates a terminal animator.
-    /// - Parameters:
-    ///   - fps: Frames per second (default 10).
-    ///   - clearScreen: Whether to clear the screen between frames.
+    /**
+     Creates a terminal animator.
+     - Parameters:
+       - fps: Frames per second (default 10).
+       - clearScreen: Whether to clear the screen between frames.
+     */
     public init(fps: Int = 10, clearScreen: Bool = true) {
         self.fps = max(1, fps)
         self.clearScreen = clearScreen
     }
 
-    /// Runs an animation loop.
-    /// - Parameters:
-    ///   - frameCount: Number of frames to render (nil for infinite).
-    ///   - render: A closure that returns the canvas for each frame.
+    /**
+     Runs an animation loop.
+     - Parameters:
+       - frameCount: Number of frames to render (nil for infinite).
+       - render: A closure that returns the canvas for each frame.
+     */
     public func animate(
         frameCount: Int? = nil,
         render: @escaping (Int) -> ASCIICanvas
@@ -43,10 +47,12 @@ public struct TerminalAnimator: Sendable {
         }
     }
 
-    /// Runs an animation loop with a string-based renderer.
-    /// - Parameters:
-    ///   - frameCount: Number of frames to render (nil for infinite).
-    ///   - render: A closure that returns the ASCII string for each frame.
+    /**
+     Runs an animation loop with a string-based renderer.
+     - Parameters:
+       - frameCount: Number of frames to render (nil for infinite).
+       - render: A closure that returns the ASCII string for each frame.
+     */
     public func animateString(
         frameCount: Int? = nil,
         render: @escaping (Int) -> String
@@ -70,13 +76,15 @@ public struct TerminalAnimator: Sendable {
 
 // MARK: - Game of Life Animation
 
-/// Animates a Game of Life instance in the terminal.
-/// - Parameters:
-///   - game: The initial game state (will be copied and evolved).
-///   - generations: Number of generations to animate (nil for infinite).
-///   - fps: Frames per second.
-///   - aliveChar: Character for living cells.
-///   - deadChar: Character for dead cells.
+/**
+ Animates a Game of Life instance in the terminal.
+ - Parameters:
+   - game: The initial game state (will be copied and evolved).
+   - generations: Number of generations to animate (nil for infinite).
+   - fps: Frames per second.
+   - aliveChar: Character for living cells.
+   - deadChar: Character for dead cells.
+ */
 public func animateGameOfLife(
     _ game: GameOfLife,
     generations: Int? = nil,
@@ -99,15 +107,17 @@ public func animateGameOfLife(
 // MARK: - Noise Animation
 
 extension NoiseGenerator {
-    /// Runs an animated noise visualization in the terminal.
-    /// - Parameters:
-    ///   - width: Canvas width.
-    ///   - height: Canvas height.
-    ///   - scale: Spatial scale.
-    ///   - timeScale: Temporal scale (speed of z-axis movement).
-    ///   - frames: Number of frames (nil for infinite).
-    ///   - fps: Frames per second.
-    ///   - palette: The character palette.
+    /**
+     Runs an animated noise visualization in the terminal.
+     - Parameters:
+       - width: Canvas width.
+       - height: Canvas height.
+       - scale: Spatial scale.
+       - timeScale: Temporal scale (speed of z-axis movement).
+       - frames: Number of frames (nil for infinite).
+       - fps: Frames per second.
+       - palette: The character palette.
+     */
     public func animateASCII(
         width: Int = 80,
         height: Int = 40,

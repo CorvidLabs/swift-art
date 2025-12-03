@@ -8,14 +8,16 @@ public struct LSystemView: View {
     private let strokeWidth: CGFloat
     private let backgroundColor: Color
 
-    /// Creates an L-System view.
-    /// - Parameters:
-    ///   - lsystem: The L-System to render.
-    ///   - generations: Number of generations to iterate.
-    ///   - turtle: The turtle interpreter to use.
-    ///   - strokeColor: The color for the lines.
-    ///   - strokeWidth: The width of the lines.
-    ///   - backgroundColor: The background color.
+    /**
+     Creates an L-System view.
+     - Parameters:
+       - lsystem: The L-System to render.
+       - generations: Number of generations to iterate.
+       - turtle: The turtle interpreter to use.
+       - strokeColor: The color for the lines.
+       - strokeWidth: The width of the lines.
+       - backgroundColor: The background color.
+     */
     public init(
         lsystem: LSystem,
         generations: Int,
@@ -32,12 +34,14 @@ public struct LSystemView: View {
         self.backgroundColor = backgroundColor
     }
 
-    /// Creates an L-System view from pre-computed lines.
-    /// - Parameters:
-    ///   - lines: The lines to render.
-    ///   - strokeColor: The color for the lines.
-    ///   - strokeWidth: The width of the lines.
-    ///   - backgroundColor: The background color.
+    /**
+     Creates an L-System view from pre-computed lines.
+     - Parameters:
+       - lines: The lines to render.
+       - strokeColor: The color for the lines.
+       - strokeWidth: The width of the lines.
+       - backgroundColor: The background color.
+     */
     public init(
         lines: [Turtle.Line],
         strokeColor: Color = .white,

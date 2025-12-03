@@ -8,13 +8,15 @@ public struct FractalNoise: NoiseGenerator, Sendable {
     private let lacunarity: Double
     private let scale: Double
 
-    /// Creates a fractal noise generator.
-    /// - Parameters:
-    ///   - baseNoise: The underlying noise generator to use.
-    ///   - octaves: Number of noise layers to combine (default: 4).
-    ///   - persistence: How much each octave contributes (default: 0.5).
-    ///   - lacunarity: Frequency multiplier for each octave (default: 2.0).
-    ///   - scale: Initial scale/frequency (default: 1.0).
+    /**
+     Creates a fractal noise generator.
+     - Parameters:
+       - baseNoise: The underlying noise generator to use.
+       - octaves: Number of noise layers to combine (default: 4).
+       - persistence: How much each octave contributes (default: 0.5).
+       - lacunarity: Frequency multiplier for each octave (default: 2.0).
+       - scale: Initial scale/frequency (default: 1.0).
+     */
     public init(
         baseNoise: any NoiseGenerator,
         octaves: Int = 4,

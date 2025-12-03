@@ -9,13 +9,15 @@ public struct GameOfLifeView: View {
     private let deadColor: Color
     private let gridLines: Bool
 
-    /// Creates a Game of Life view.
-    /// - Parameters:
-    ///   - game: A binding to the Game of Life instance.
-    ///   - cellSize: The size of each cell in points.
-    ///   - aliveColor: The color for living cells.
-    ///   - deadColor: The color for dead cells.
-    ///   - gridLines: Whether to show grid lines.
+    /**
+     Creates a Game of Life view.
+     - Parameters:
+       - game: A binding to the Game of Life instance.
+       - cellSize: The size of each cell in points.
+       - aliveColor: The color for living cells.
+       - deadColor: The color for dead cells.
+       - gridLines: Whether to show grid lines.
+     */
     public init(
         game: Binding<GameOfLife>,
         cellSize: CGFloat = 10,
@@ -139,12 +141,14 @@ public struct ElementaryCAView: View {
     private let aliveColor: Color
     private let deadColor: Color
 
-    /// Creates an Elementary CA view from pre-generated history.
-    /// - Parameters:
-    ///   - history: The 2D array of states (generations x cells).
-    ///   - cellSize: The size of each cell in points.
-    ///   - aliveColor: The color for alive cells.
-    ///   - deadColor: The color for dead cells.
+    /**
+     Creates an Elementary CA view from pre-generated history.
+     - Parameters:
+       - history: The 2D array of states (generations x cells).
+       - cellSize: The size of each cell in points.
+       - aliveColor: The color for alive cells.
+       - deadColor: The color for dead cells.
+     */
     public init(
         history: [[Bool]],
         cellSize: CGFloat = 4,
@@ -157,13 +161,15 @@ public struct ElementaryCAView: View {
         self.deadColor = deadColor
     }
 
-    /// Creates an Elementary CA view by generating history.
-    /// - Parameters:
-    ///   - ca: The elementary CA to generate from.
-    ///   - generations: Number of generations to generate.
-    ///   - cellSize: The size of each cell in points.
-    ///   - aliveColor: The color for alive cells.
-    ///   - deadColor: The color for dead cells.
+    /**
+     Creates an Elementary CA view by generating history.
+     - Parameters:
+       - ca: The elementary CA to generate from.
+       - generations: Number of generations to generate.
+       - cellSize: The size of each cell in points.
+       - aliveColor: The color for alive cells.
+       - deadColor: The color for dead cells.
+     */
     public init(
         ca: ElementaryCA,
         generations: Int,
