@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/github/license/CorvidLabs/swift-art)](https://github.com/CorvidLabs/swift-art/blob/main/LICENSE)
 [![Version](https://img.shields.io/github/v/release/CorvidLabs/swift-art)](https://github.com/CorvidLabs/swift-art/releases)
 
+> **Pre-1.0 Notice**: This library is under active development. The API may change between minor versions until 1.0.
+
 A comprehensive Swift package for generative art and computational creativity, providing elegant, protocol-oriented abstractions for creating beautiful algorithmic art.
 
 ## Features
