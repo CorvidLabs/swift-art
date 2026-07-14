@@ -1,0 +1,11 @@
+[tasks.build]
+cmd = "swift build"
+description = "Build all available Swift package products"
+
+[tasks.test]
+cmd = "swift test"
+description = "Run all available Swift package tests"
+
+[lanes.verify]
+description = "Build and test swift-art including macOS SwiftUI targets"
+steps = ["build", "test"]

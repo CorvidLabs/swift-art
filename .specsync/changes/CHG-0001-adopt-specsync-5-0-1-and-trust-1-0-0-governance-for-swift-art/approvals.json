@@ -1,0 +1,46 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784010679,
+      "digest": "031f51673a34c67c9a55f0c4c4a45e456a950e6545ab43bc04b6339ab11d3f0a",
+      "note": "Definition approved after full 50-file implementation and 255-test surface audit with native build and all 255 tests green."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784010994,
+      "digest": "cf9b92bab1508bdb52e888141ef38f83d381a388a91e8359cd05d730fc421c0a",
+      "note": "Definition refreshed after exact 411-export descriptions, 50-file 6,846-LOC coverage, and mapped native evidence for all eleven requirements."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784011086,
+      "digest": "eabe6faa1e711b50381e31d12ef769e484d1eab55c195cdc3bd798236da76ede",
+      "note": "Definition corrected and refreshed: exact inventory is 49 source files (31 Art, 8 ArtTerminal, 10 ArtUI), 6,846 LOC, 411 exports, and 255 tests."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784011220,
+      "digest": "25d3eb585076bbde993be425b61a9879fe3fd1395b2f887aa3d61c5dc894017e",
+      "note": "Portable definition approval refreshed after correcting the lifecycle delta to modify the already-authored canonical requirement blocks without changing their reviewed semantics."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784011241,
+      "digest": "761bdcf524d5346c02242c3fd4c12101dd89c13adcd17a7c7bad5ce24cc8eb72",
+      "note": "Closing approval after released SpecSync 5.0.1 reported 411/411 exports, 49/49 files, 6,846/6,846 LOC and the native build plus all 255 tests passed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784011350,
+      "digest": "10097b1f8daad1328523135f1c252c4d8e562b247db02f12706ab4ee05e13a4d",
+      "note": "Fresh closing approval after correcting the portable registry name; released SpecSync 5.0.1 again reported 411/411 exports, 49/49 files, 6,846/6,846 LOC and all 255 native tests passed."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-art",
+  "slug": "adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-art",
+  "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for swift-art",
+  "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for swift-art",
+  "kind": "migration",
+  "state": "accepted",
+  "base_commit": "9c6c3008f4d0bf146fe7b702e0832a1e72aa88db",
+  "created_at": 1783885109,
+  "updated_at": 1784011350,
+  "affected_specs": [
+    "art"
+  ],
+  "affected_paths": [
+    "Sources/",
+    "Tests/",
+    "Package.swift",
+    "Package.resolved",
+    "fledge.toml",
+    ".github/",
+    ".specsync/",
+    ".trust.toml",
+    ".augur.toml",
+    ".attest.json",
+    "AGENTS.md"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "SpecSync 5.0.1 reports 100% file, LOC, and export coverage for all 49 source files; all four agents are installed; Trust doctor and the native Swift build and 255 tests pass; existing Ubuntu, macOS, CodeQL, and documentation workflows remain independent; immutable Trust runs on every pull request"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "yes",
+    "public_contract": "yes"
+  }
+}

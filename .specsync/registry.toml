@@ -1,0 +1,5 @@
+[registry]
+name = "swift-art"
+
+[specs]
+art = "specs/art/art.spec.md"
