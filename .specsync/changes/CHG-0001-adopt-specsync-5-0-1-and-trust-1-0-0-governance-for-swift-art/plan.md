@@ -5,8 +5,9 @@ artifact: plan
 
 # Plan
 
-1. Adopt SpecSync 5.0.1 with an explicit no-spec-change rationale.
-2. Install all four agent integrations.
-3. Add native Swift build/test verification and standard Trust policy.
-4. Add immutable Trust without replacing platform or documentation workflows.
-5. Validate locally and publish a draft PR for human approvals.
+1. Inventory and review every implementation and test file without changing product code.
+2. Define the complete existing behavior in one active canonical companion with stable requirement IDs.
+3. Document every parser-visible export and enforce 100% file, LOC, and export coverage.
+4. Install all four agent integrations and standard Trust, Augur, and Attest policies.
+5. Add immutable Trust backed by the native Fledge lane while preserving platform, security, and documentation workflows.
+6. Record portable approvals only after native verification, then require exact hosted green before promotion and merge.

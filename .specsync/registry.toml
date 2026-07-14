@@ -1,4 +1,5 @@
 [registry]
-name = "swift-art-trust-wave8"
+name = "swift-art"
 
 [specs]
+art = "specs/art/art.spec.md"

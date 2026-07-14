@@ -5,5 +5,4 @@ artifact: docs
 
 # Docs
 
-Generated project-scoped agent guidance documents the SDD workflow. Public API,
-README, DocC inputs, package products, and platform documentation are unchanged.
+The new canonical companion documents the complete shipped API and test-backed behavior without altering the README, DocC inputs, package products, platform support, or public examples. Generated project-scoped Claude, Cursor, Codex, and Gemini guidance documents the SpecSync 5 lifecycle. Public action references remain mutable only in documentation; the consumer workflow uses the immutable Trust 1.0.0 commit.

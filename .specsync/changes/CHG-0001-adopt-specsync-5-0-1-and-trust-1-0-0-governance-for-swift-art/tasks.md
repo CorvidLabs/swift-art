@@ -5,10 +5,11 @@ artifact: tasks
 
 # Tasks
 
-- [x] Adopt the verified SDD lifecycle and advisory threshold zero.
+- [x] Inventory all 49 source files and 11 test files.
+- [x] Audit computation, terminal, conditional SwiftUI, package, and workflow behavior.
+- [x] Add the active canonical contract and eleven stable requirement IDs.
+- [x] Replace all 411 export stubs with source-backed descriptions.
+- [x] Enforce 100% SpecSync file, LOC, and export coverage.
 - [x] Install Claude, Cursor, Codex, and Gemini integrations.
-- [x] Add standard Trust, Augur, and Attest policies.
-- [x] Add blocking macOS Swift build/test verification.
-- [x] Preserve existing CI and documentation workflows.
-- [ ] Record definition approval.
-- [ ] Record verification evidence and closing approval.
+- [x] Configure the immutable Trust action and native Fledge verification lane.
+- [x] Preserve existing macOS, Ubuntu, CodeQL, and DocC Pages workflows.
